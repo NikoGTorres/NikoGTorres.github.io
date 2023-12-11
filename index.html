@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge" <meta name="viewport"
+        content="width=devic-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css" </head>
+    <script src="https://kit.fontawesome.com/7e92f9ae65.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Screenshot 2023-11-08 at 2.22.28 PM.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hello, I'm <span>Niko Torres </span><br></h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I am Niko Torres, a computer science major located in the United States. I am currently on
+                        the path to earning my Associate's Degree at Mt. San Jacinto College, with an anticipated
+                        graduation date in Spring 2024. Beyond this, I plan to continue my education at a California
+                        university to attain a Bachelor's Degree in computer science. I am pursuing a career in software
+                        engineering and am actively seeking internship opportunities to not only apply my current
+                        skills,
+                        but also to further enhance my knowledge and gain valuable hands-on experience.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class=" tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C, C++, Python, HTML, CSS, JavaScript, x86 Assembly Language,
+                                Dart</li>
+                            <li><span>Technologies</span><br>Adobe Photoshop, Adobe Illustrator, Adobe Creative Cloud,
+                                Logic Pro X, FL Studio, Microsoft Office, Xcode, Visual Studio, Visual Studio Code,
+                                Android Studio, Flutter, QT Designer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Santa Teresa High School</li>
+                            <li><span>2024</span><br>Mt. San Jacinto College</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2018</span><br>Hot Gourmet Coffee</li>
+                            <li><span>2022</span><br>Ross Stores</li>
+                            <li><span>2022 - Current</span><br>24 Hour Home Care</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A fully responsive website built from scratch, handling structure, styling, and interactive,
+                            dynamic
+                            behaviors for an engaging user experience.
+                        </p>
+                        <a href="https://github.com/NikoGTorres/NikoGTorres.github.io"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Email Client</h3>
+                        <p>A modular and scalable email client using QT Designer and the PyQt5 library, featuring a
+                            graphical user interface (GUI) for user authentication, email composition, and sending,
+                            while adhering to object-oriented programming principles.</p>
+                        <a href="https://github.com/NikoGTorres/Email-Client"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Wordle Game</h3>
+                        <p>An engaging game that emulates Wordle, showcasing proficiency in application
+                            development and innovative interactive design, utilizing various data structures and
+                            algorithms.</p>
+                        <a href="https://github.com/NikoGTorres/Wordle-Game"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/NikoGTorres?tab=repositories" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> torresgniko@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>(408) 693 - 5184</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/NikoGTorres"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/niko-torres-915678288/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage"><i
+                                class="fa-solid fa-info"></i></a>
+                    </div>
+                    <a href="images/Niko_Torres_Resume copy.pdf" download class="btn btn2">Download Resume/CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email Address" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyZXEIYcU2FAjSpKDDr2YtuRl0ojzdvv9tRbwvGSmAeRqUtnyZxFV-x1VlHBtXAXaZnzA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully."
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
